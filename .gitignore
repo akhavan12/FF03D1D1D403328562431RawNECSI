@@ -1,0 +1,16 @@
+# Ignore archives
+*.zip
+*.7z
+*.tar
+*.tar.gz
+# Specific offenders
+assets.zip
+edu-site/necsi.edu.zip
+# Ignore archives
+*.zip
+*.7z
+*.tar
+*.tar.gz
+# Specific offenders
+assets.zip
+edu-site/necsi.edu.zip

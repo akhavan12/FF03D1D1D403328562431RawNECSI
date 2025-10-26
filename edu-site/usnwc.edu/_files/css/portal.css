@@ -1,0 +1,637 @@
+/* 
+ * Deprecated DNN CSS class names will remain available for some time
+ * before being  permanently removed. Removal will occur according to
+ * the  following process:
+ *
+ * 1. Removal will only occur with a major (x.y) release, never
+ *    with a maintenance (x.y.z) release.
+ * 2. Removal will not occur less than six months after the release
+ *    when it was deprecated.
+ * 3. Removal will not occur until after deprecation has been noted 
+ *    in at least two major releases.
+ *
+ *                                              |        |Planned |
+ *  Name                                        |Release |Removal |
+ *---------------------------------------------- -------- -------- 
+ * Mod{NAME}C                                     5.6.2    6.2
+ *   {NAME} = sanitized version of the DesktopModule Name 
+ *   Used on <div> tag surrounding Module Content, inside container
+ *---------------------------------------------- -------- -------- 
+ */  
+.typing-text, .suggestion{
+  box-sizing: content-box !important;
+}
+.visible-desktop img{
+	max-width:250px;
+}
+.container-fluid{
+ 	margin-bottom:20px; 
+}
+.general-listing{
+    margin-bottom: 3.75rem;
+    padding-bottom: 3.125rem;
+    border-bottom: 0.0625rem solid #d4d4d4;
+}
+a.main-btn{
+     display: block;
+    max-width: 300px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #6d143a;
+    color: #fff;
+    margin-bottom: 25px;
+}
+/*Site wide style changes*/
+.full-text table {
+    max-width:100% !important;
+}
+.full-text a[href^="mailto:"] , .doc-style a[href^="mailto:"], .submit-message a[href^="mailto:"] {
+    display: inline-flex;
+}
+.full-text a[href$=".pdf"]{
+	display:inline;
+  	font-weight:500;
+  	margin-left:0;
+}
+.full-text a[href$=".pdf"]::before{
+ 	background:none; 
+}
+
+/*Hides register button to user*/
+#siteHeadouter, #userControls, .dnnLoginService .dnnFormItem:last-child, .registerGroup {
+ 	display:none !important; 
+}
+/*For videos and flickr gallery around the site*/
+.embed-container {
+  	position: relative;
+  	padding-bottom: 56.25%;
+  	padding-top: 30px; height: 0; overflow: hidden;
+} 
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*DNN Faculty Input Form*/
+.submit-message{
+  max-width:700px;
+  margin:auto;
+}
+.form-steps.with-steps .steps1 .step-line .step-circle{
+    width: 21px;
+    height: 21px;
+}
+.form-steps.with-steps  .steps1{
+	margin-top:0px;
+     width: 66% !important;
+}
+.form-steps.with-steps .steps1 .step-name{
+ 	bottom:-37px ; 
+}
+.error-message{
+  	font-size: 12px;
+    color: #313131;
+    background-color: #fbd2d2;
+    padding: 2px 6px;
+    border: 1px solid #ecb3b3;
+    display: inline-block;
+}
+.form-builder-canvas hr {
+    border: 1px solid #dddddd;
+}
+.form-builder-canvas .form-submit button.dnnPrimaryAction{
+    background: #fdca00;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    padding: .8rem 1.4rem;
+    text-decoration: none;
+    transition: background 0.2s ease-out;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 0 6px 0px 6px;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    position: relative;
+     border-radius: 3px !important;
+}
+.form-builder-canvas .form-submit button.dnnPrimaryAction:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 132px;
+    height: 50px;
+    border: 1px solid #fdca00;
+    background: transparent;
+}
+.form-builder-canvas .form-submit button.dnnSecondaryAction{
+     background: #d2d2d2;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    padding: .8rem 1.4rem;
+    text-decoration: none;
+    transition: background 0.2s ease-out;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 35px 30px 0px 6px;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    position: relative;
+      border-radius: 3px !important;
+}
+.form-builder-canvas .form-submit button.dnnSecondaryAction:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 135px;
+    height: 50px;
+    border: 1px solid #d2d2d2;
+    background: transparent;
+}
+.form-builder-canvas select.dnnSelect{
+	height:40px !important;
+}
+.form-builder-canvas select[aria-label=multi-select-dropdown]{
+	height:120px !important;
+}
+.form-builder-canvas .dateInput-component div:not(.calendarContainer) svg{
+ 	top:4px !important;
+}
+.dnnFormItem input[type="text"], .dnnFormItem select, .dnnFormItem textarea, .dnnFormItem input[type="email"]{
+  	font-size:14px;
+}
+.dnnDescription{
+ 	font-size:13px; 
+    font-style: italic;
+}
+.dnnFormItem input[type="text"], .dnnFormItem select, .dnnFormItem textarea, .dnnFormItem input[type="email"]{
+  	margin-bottom:10px;
+  	height:40px;
+}
+.calendar-portal .calendarContainer table .pika-button {
+	border-radius: 0 !important;
+}
+.calendar-portal .is-selected .pika-button{
+      background: #fdca00 !important;
+      color: #000 !important;
+}
+.required label:after, legend.required:after{
+  	color: #f33737;
+  	border:none;
+  	background-color:inherit;
+  	display:inline;
+  margin-left: 0px;
+}
+.login-btn{
+  	background-color:#00529d;
+  	color:#fff;
+  	padding:10px 25px;
+  	text-transform:uppercase;
+  	font-size:11px;  
+}
+.login-btn-border{
+	position: relative;
+    padding: 9px 2px 11px 2px;
+    border: 1px solid #00529d;
+}
+.login-btn:hover, .login-btn:visited{
+ 	color:#fff; 
+  	text-decoration:none;
+}
+.LoginPanel{
+	margin-top:80px;
+}
+/*End DNN Faculty Input Form*/
+/*For xmod forms*/
+.xmp-form h2.h4{
+	padding-bottom: 1.6rem;
+}
+.xmp-form h2.h4 span{
+	display: block;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: "Droid Serif", Cambria, Georgia, serif;
+    margin: 8px 0 0;
+    color: #4a4a4a;
+}
+.xmp-form .columns{
+    margin-bottom:18px;
+}
+.xmp-form select, .xmp-form input[type=text], .xmp-form textarea{  
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    color: #333;
+    width: 100%;
+    font-size: 14px;
+    height: 47px;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.8), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.8), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}   
+.xmp-form textarea{
+    height:65px; 
+    width:100%;
+}
+.xmp-form section{      
+    border: 1px solid #C9CACC;
+    padding: .7rem 1.6rem 1rem;
+}
+.xmp-form section hr{      
+    border-color: #d8d8d8;
+    border-width: 1px 0 0;
+}      
+.xmp-form label.xmp-form-label{ 
+    display:inline-block; 
+    text-align: left; 
+}  
+.xmp-form .required {
+    color:red; 
+    padding-right:3px;
+}
+.xmp-form .btn--border{
+    border: 1px solid #fdca00;
+    padding: 6px 0;
+    display: inline-block;
+    float: right;
+}
+.xmp-form input.btn--yellow, .xmp-form input.btn--yellow:hover{      
+    background: #fdca00;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    padding: .8rem 2.1rem;
+    text-decoration: none;
+    transition: background 0.2s ease-out;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 0 6px 0px 6px;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    position: relative;
+    border-radius: 3px !important;        
+}
+.xmp-form .xmp-validation{      
+    font-size: 12px;
+    color: #313131;
+    background-color: #fbd2d2;
+    padding: 2px 6px;
+    border: 1px solid #ecb3b3;
+    display: inline-block;
+}
+/*End xmod forms*/
+
+
+
+
+
+
+/* PAGE BACKGROUND */
+/* background color for the header at the top of the page  */
+.HeadBg {
+}
+
+/* background color for the content part of the pages */
+Body
+{
+}
+
+.ControlPanel {
+}
+
+/* background/border colors for the selected tab */
+.TabBg {
+}
+
+.LeftPane  { 
+}
+
+.ContentPane  { 
+}
+
+.RightPane  { 
+}
+
+/* text style for the selected tab */
+.SelectedTab {
+}
+
+/* hyperlink style for the selected tab */
+A.SelectedTab:link {
+}
+
+A.SelectedTab:visited  {
+}
+
+A.SelectedTab:hover    {
+}
+
+A.SelectedTab:active   {
+}
+
+/* text style for the unselected tabs */
+.OtherTabs {
+}
+    
+/* hyperlink style for the unselected tabs */
+A.OtherTabs:link {
+}
+
+A.OtherTabs:visited  {
+}
+
+A.OtherTabs:hover    {
+}
+
+A.OtherTabs:active   {
+}
+
+/* GENERAL */
+/* style for module titles */
+.Head   {
+}
+
+/* style of item titles on edit and admin pages */
+.SubHead    {
+}
+
+/* module title style used instead of Head for compact rendering by QuickLinks and Signin modules */
+.SubSubHead {
+}
+
+/* text style used for most text rendered by modules */
+.Normal
+{
+}
+
+/* text style used for textboxes in the admin and edit pages, for Nav compatibility */
+.NormalTextBox
+{
+}
+
+.NormalRed
+{
+}
+
+.NormalBold
+{
+}
+
+/* text style for buttons and link buttons used in the portal admin pages */
+.CommandButton     {
+}
+    
+/* hyperlink style for buttons and link buttons used in the portal admin pages */
+A.CommandButton:link {
+}
+
+A.CommandButton:visited  {
+}
+
+A.CommandButton:hover    {
+}
+    
+A.CommandButton:active   {
+}
+
+/* button style for standard HTML buttons */
+.StandardButton     {
+}
+
+/* GENERIC */
+H1  {
+}
+
+H2  {
+}
+
+H3  {
+}
+
+H4  {
+}
+
+H5, DT  {
+}
+
+H6  {
+}
+
+TFOOT, THEAD    {
+}
+
+TH  {
+}
+
+A:link  {
+}
+
+A:visited   {
+}
+
+A:hover {
+}
+
+A:active    {
+}
+
+SMALL   {
+}
+
+BIG {
+}
+
+BLOCKQUOTE, PRE {
+}
+
+
+UL LI   {
+}
+
+UL LI LI    {
+}
+
+UL LI LI LI {
+}
+
+OL LI   {
+}
+
+OL OL LI    {
+}
+
+OL OL OL LI {
+}
+OL UL LI   {
+}
+
+HR {
+}
+
+/* MODULE-SPECIFIC */
+/* text style for reading messages in Discussion */    
+.Message    {
+}   
+
+/* style of item titles by Announcements and events */
+.ItemTitle    {
+}
+
+/* Menu-Styles */
+/* Module Title Menu */
+.ModuleTitle_MenuContainer {
+}
+
+.ModuleTitle_MenuBar {
+}
+
+.ModuleTitle_MenuItem {
+}
+
+.ModuleTitle_MenuIcon {
+}
+
+.ModuleTitle_SubMenu {
+}
+
+.ModuleTitle_MenuBreak {
+}
+
+.ModuleTitle_MenuItemSel {
+}
+
+.ModuleTitle_MenuArrow {
+}
+
+.ModuleTitle_RootMenuArrow {
+}
+
+/* Main Menu */
+
+.MainMenu_MenuContainer {
+}
+
+.MainMenu_MenuBar {
+}
+
+.MainMenu_MenuItem {
+}
+
+.MainMenu_MenuIcon {
+}
+
+.MainMenu_SubMenu {
+}
+
+.MainMenu_MenuBreak {
+}
+
+.MainMenu_MenuItemSel {
+}
+
+.MainMenu_MenuArrow {
+}
+
+.MainMenu_RootMenuArrow {
+}
+
+/* Login Styles */
+.LoginPanel{
+}
+
+.LoginTabGroup{
+}
+
+.LoginTab {
+}
+
+.LoginTabSelected{
+}
+
+.LoginTabHover{
+}
+
+.LoginContainerGroup{
+}
+
+.LoginContainer{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
