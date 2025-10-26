@@ -1,0 +1,27 @@
+.full-text a.btn {
+     display: inline-block;
+}
+ .full-text a.btn[href$=".pdf"], a.btn[href$=".pdf"] {
+     font-family: "Raleway", Helvetica, Arial, sans-serif;
+     margin-left: 6px;
+}
+ .full-text a[href$=".pdf"] {
+     font-family: "Droid Serif", Cambria, Georgia, serif;
+}
+ .btn + .btn {
+     margin-left: 15px !important;
+}
+ a.columns[href$=".pdf"]{
+     margin-left: unset;
+     font-weight: unset;
+     font-family: unset;
+}
+ a.columns[href$=".pdf"]::before {
+     content: none !important;
+}
+ .section--research-war-pubs:has(+ .section--research-war-pubs) {
+     padding-bottom: 0;
+}
+a[href^="mailto:"] {
+    display: inherit;
+}

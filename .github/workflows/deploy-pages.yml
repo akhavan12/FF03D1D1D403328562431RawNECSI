@@ -1,0 +1,43 @@
+name: Deploy to gh-pages branch
+
+on:
+  push:
+    branches:
+      - main
+      - development-clean
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare docs (run publish script if present)
+        run: |
+          if [ -f publish_to_docs.sh ]; then
+            chmod +x publish_to_docs.sh
+            ./publish_to_docs.sh
+          else
+            echo "publish_to_docs.sh not found — expecting docs/ to already exist"
+          fi
+
+      - name: Show docs content (debug)
+        run: |
+          echo "Listing docs/"
+          ls -la docs || true
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+# Notes:
+# - This workflow will run on push to `main` and `development-clean`.
+# - It runs `publish_to_docs.sh` if present to regenerate `docs/` from `edu-site/`.
+# - The `peaceiris/actions-gh-pages` action will commit `docs/` to the `gh-pages` branch.
